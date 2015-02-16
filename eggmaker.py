@@ -8,7 +8,7 @@ from os import path
 #load var into soup
 #run soup commands on var
 
-soup = BeautifulSoup(open("the-gathering-0.html"))
+soup = BeautifulSoup(open("hell-1.xhtml"))
 
 #print(soup.find_all("p"))
 
@@ -21,3 +21,5 @@ for p in soup.find_all("p"):
     #type(thing)
     wordCount +=len(words)
     print wordCount
+
+p.find_all()

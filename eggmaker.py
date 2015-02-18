@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 from os import path
+from collections import Counter
 
 #load stuff into bsoup
 #take command from the command line, arg-v
@@ -13,6 +14,7 @@ soup = BeautifulSoup(open("hell-1.xhtml"))
 #print(soup.find_all("p"))
 
 wordCount = 0
+class_counter = Counter()
 
 for p in soup.find_all("p"):
     words = p.get_text()
@@ -21,5 +23,9 @@ for p in soup.find_all("p"):
     #type(thing)
     wordCount +=len(words)
     print wordCount
+    
 
-p.find_all()
+p.find_all("p", "s1")
+
+#use soup to find what classes we're dealing with
+#find the count of each type of class

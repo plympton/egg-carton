@@ -2,28 +2,6 @@ from bs4 import BeautifulSoup, Tag
 from os import path
 #from collections import Counter
 
-"""soup = BeautifulSoup(open("DeepDownDark.xhtml")) this is a test case
-#make this a function
-#fnct that takes a soup, 
-for a in soup.findAll('a'): #loop through all of the results from the search for 'a'
-    print(a) #
-    p = Tag(soup, 'p') #create a P element
-    a.replaceWith(p)   #Put it where the A element is
-
-
-
-soup = BeautifulSoup("<b>Argh!</b>")
-
-
-
-1) create soup  - take a file, return a soup
-2) take a soup, a tag to find, and a tag to replace it with - return a soup
-3) write a soup to a file
-
-make three defs for functions
-write out their 3 arguments - soup, from, to
-"""
-
 def makeSoup(file_name):
 	return BeautifulSoup(open(file_name))
 
